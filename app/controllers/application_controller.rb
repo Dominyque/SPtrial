@@ -23,6 +23,6 @@ class ApplicationController < ActionController::Base
 		spreffis = st[rand(st.length)] + al[rand(al.length)] + 
 						ci[rand(ci.length)] + ja[rand(ja.length)] + ' ' +
 						 + pre[rand(pre.length)] + fis[rand(fis.length)]
-		render html: spreffis
+		render html: "welcome to\n#{spreffis}"
 	end
 end

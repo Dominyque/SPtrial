@@ -20,9 +20,14 @@ class ApplicationController < ActionController::Base
 				'ssz', 'ssσ', 'ssς', 'zss', 'css', 'σss',
 				'scz']
 		fis = [fi[rand(fi.length)] + jota[rand(jota.length)] + is[rand(is.length)]]
-		spreffis = st[rand(st.length)] + al[rand(al.length)] + 
+		@spreffis = st[rand(st.length)] + al[rand(al.length)] + 
 						ci[rand(ci.length)] + ja[rand(ja.length)] + ' ' +
 						 + pre[rand(pre.length)] + fis[rand(fis.length)]
-		render html: "welcome to\n#{spreffis}"
+		return @spreffis
+	end
+	def op
+		#spreffis = sp
+		sp
+		render html: "welcome to\n#{@spreffis}"
 	end
 end

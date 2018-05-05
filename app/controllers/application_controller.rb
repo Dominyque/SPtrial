@@ -1,8 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+
+  before_action :sp
+
 	#def initialize
 	#	sp
 	#end
+
 	def sp
 		# --Stallция Preφιcς--
 		s = ['S', 'Z', 'C', 'S']
@@ -31,9 +35,10 @@ class ApplicationController < ActionController::Base
 			cilibles.push(i[rand(i.length)])
 		end
 		@spreffis = cilibles.join
+		@spinitial = cilibles[0] + cilibles[8]
 	end
-	def op
-		sp
-		render html: @spreffis
-	end
+	#def op
+	#	sp
+	#	render html: @spreffis
+	#end
 end

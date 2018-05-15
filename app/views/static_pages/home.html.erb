@@ -1,7 +1,8 @@
 <% provide(:title, "Home") %>
-<h1><%= @spreffis %></h1>
-<p>
-  This is the home page for the
-  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+<div class="center jumbotron">
+	<h1><%= @spreffis.upcase %></h1>
+	<h2>
+	</h2>
+	<p><%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %></p>
+</div>
+<%= link_to image_tag("SP logo_wt.png", alt: "SP logo"), 'https://scontent.fvno2-1.fna.fbcdn.net/v/t1.0-9/577751_100496573454243_1930394207_n.png?_nc_cat=0&oh=b5df826ba5929c8116011993fa82d44e&oe=5B95B43D' %>

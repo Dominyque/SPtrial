@@ -1,5 +1,22 @@
 <% provide(:title, "Help") %>
-<h1>Help</h1>
+<h2>Help✓</h2>
 <p>
-  <text></text>
+	<!--
+	<form action="help" method="provide">
+		<textarea name="message" rows="10" cols="50"></textarea>
+		<br/>
+		<input type="submit">
+	</form>
+
+	<form action="help">
+		<br/>
+		<input name="text" type="">
+	</form>
+	-->
+
+	<%= form_tag("help", method: "post") do %>
+		<%= text_field_tag(:@q) %>
+		<%= provide("Search") %>
+	<% end %>
+	<%= yield(:@q) %>
 </p>

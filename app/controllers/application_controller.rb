@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
 		c = ['c', 'z', 's', 'c', 'z', 'ц']
 		i = ['i', '', 'и']
 		ja = ['a', 'ja', 'ya', 'ia', 'иa','я', 'ѧ']
-		space = [' ', ' ', ' ', '-', '_', '*', '|', '||']
 		pp = ['P', 'П', 'Ψ', 'Ξ']
 		r = ['r', 'р']
 		e = ['e', 'ϵ', 'ε']
@@ -29,7 +28,7 @@ class ApplicationController < ActionController::Base
 				'σσ', 'σς', 'ςς',
 				'ssz', 'ssσ', 'ssς', 'zss', 'css', 'σss',
 				'scz']
-		sparray = [s, t, a, l, c, i, ja, space, pp, r, e, fi, jota, is]
+		sparray = [s, t, a, l, c, i, ja, ["\n"], pp, r, e, fi, jota, is]
 		cilibles = []
 		for i in sparray
 			cilibles.push(i[rand(i.length)])

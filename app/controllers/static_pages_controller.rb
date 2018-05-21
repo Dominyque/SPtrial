@@ -4,6 +4,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def help
+		@postas = "text"
 	end
 
 	def about

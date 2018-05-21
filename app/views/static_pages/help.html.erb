@@ -14,6 +14,8 @@
 	</form>
 	-->
 
+	<%= @postas %>
+
 	<%= form_tag("help", method: "post") do %>
 		<%= text_field_tag(:@q) %>
 		<%= provide("Search") %>
